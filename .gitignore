@@ -1,0 +1,12 @@
+# Ignore IntelliJ
+.idea/
+*.iml
+
+# Ignore temporary files
+*.log
+.DS_Store
+
+# No secrets in this repo
+*.key
+*.pem
+.env
