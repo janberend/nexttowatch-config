@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: recommendation-service
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 2000
+        readTimeout: 4000
+
+logging:
+  level:
+    com.nexttowatch: DEBUG
+
+openai:
+  api-key: ${OPENAI_API_KEY}
